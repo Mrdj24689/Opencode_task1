@@ -1,0 +1,67 @@
+Ans 1:- Differnce between git and github 
+          what’s the difference? Simply put, Git is a version control system that
+ lets you manage and keep track of your source code history. GitHub is a cloud-based
+ hosting service that lets you manage Git repositories. If you have open-source 
+ that use Git, then GitHub is designed to help you better manage them. 
+After all, in the world of programming, naming conventions aren’t always intuitive. 
+ why it’s worth recognizing the connections and the differences in the similarly named Git and GitHub
+ Both Git and GitHub give programmers valuable version-control functionality so that they can build ongoing coding projects 
+ being afraid of messing everything up. GitHub just takes things a little bit further than Git
+ offering more functionality and resources, as well as a place online to store and collaborate on projects.
+
+Ans 2:-1. Git clone
+Git clone is a command for downloading existing source code from a remote repository (like Github, for example).
+ In other words, Git clone basically makes an identical copy of the latest version of a project in a repository and saves it to your computer.
+There are a couple of ways to download the source code, but mostly I prefer the clone with https way:
+git clone <https://name-of-the-repository-link>
+For example, if we want to download a project from Github, all we need to do is click on the green button (clone or download), copy the URL in the box and paste it after the git clone command that I've shown right above.
+2. Git branch
+Branches are highly important in the git world. By using branches, several developers are able to work in parallel on the same project simultaneously. We can use the git branch command for creating, listing and deleting branches.
+Creating a new branch:
+git branch <branch-name>
+This command will create a branch locally. To push the new branch into the remote repository, you need to use the following command:
+git push -u <remote> <branch-name>
+3. Git checkout
+This is also one of the most used Git commands. To work in a branch, first you need to switch to it. We use git checkout mostly for switching from one branch to another. We can also use it for checking out files and commits.
+git checkout <name-of-your-branch>
+There are some steps you need to follow for successfully switching between branches:
+The changes in your current branch must be committed or stashed before you switch
+The branch you want to check out should exist in your local
+There is also a shortcut command that allows you to create and switch to a branch at the same time:
+git checkout -b <name-of-your-branch>
+This command creates a new branch in your local (-b stands for branch) and checks the branch out to new right after it has been created.
+
+4. Git status
+The Git status command gives us all the necessary information about the current branch. 
+git status
+We can gather information like:
+Whether the current branch is up to date
+Whether there is anything to commit, push or pull
+Whether there are files staged, unstaged or untracked
+Whether there are files created, modified or deleted
+
+5. Git add
+When we create, modify or delete a file, these changes will happen in our local and won't be included in the next commit (unless we change the configurations).
+
+We need to use the git add command to include the changes of a file(s) into our next commit. 
+
+To add a single file:
+
+git add <file>
+To add everything at once:
+
+git add -A
+ 
+Ans3:-You should navigate to your forked repository, and press the New pull request button on your left-hand side of the page.
+
+GitHub Pull Request Button
+
+You can modify the branch on the next screen. On either side you can select the appropriate repository from the drop-down menu and the appropriate branch.
+
+Once you have chosen, for example, the main branch of the original repository on the left-hand side, and the new-branch of your forked repository of the right-hand side, you should receive a screen that states your branches can be merged if there is no competing code:
+
+GitHub Pull Request
+
+You should add a title and a comment to the appropriate fields and then press the Create pull request button.
+
+At this point, the maintainers of the original repository will decide whether or not to accept your pull request. They may ask for you to edit or revise your code prior to accepting the pull request through submitting a code review.
